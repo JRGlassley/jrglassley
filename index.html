@@ -1,73 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox project</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-   
-   <div class="header dark-bg">
-      <div class="logo">Header Logo</div>
-      <ul>
-         <li><a href="#">header link one</a></li>
-         <li><a href="#">header link two</a></li>
-         <li><a href="#">header link three</a></li>
-      </ul>
-   </div>
 
-   <div class="hero-container dark-bg">
-      <div class="left">
-         <div class="hero">This website is awesome</div>
-         <div class="hero-text">This website has some subtext that goes here under the main text. It's a smaller font and the color is lower contrast.</div>
-         <button>Sign up</button>
-      </div>
-      <div class="right">
-         <div>This is a placeholder for an image</div>
-      </div>
-   </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  </link>
+  <script src="javascript.js"></script>
+</head>
 
-   <div class="content">
-      <div class="card-title">Some random information.</div>
-      <div class="card-container">
-         <div class="card">
-            <div class="empty-square"></div>
-            <div class="card-text">This is some subtext under an illustration or image</div>
-         </div>
-         <div class="card">
-            <div class="empty-square"></div>
-            <div class="card-text">This is some subtext under an illustration or image</div>
-         </div>
-         <div class="card">
-            <div class="empty-square"></div>
-            <div class="card-text">This is some subtext under an illustration or image</div>
-         </div>
-         <div class="card">
-            <div class="empty-square"></div>
-            <div class="card-text">This is some subtext under an illustration or image</div>
-         </div>
+<body>
+  <div class="scoreboard">
+    <div class="score-title">Score</div>
+    <div class="score-container">
+      <div class="score-human">
+        <div class="score-human-number">0</div>
+        <div class="score-human-label">Human</div>
       </div>
-   </div>
-   
-   <div class="quote">
-      <div class="quote-text">This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</div>
-      <div class="quote-author">-Thor, God of Thunder</div>
-   </div>
-   <div class="sign-up"></div>
-
-   <div class="action-container">
-      <div class="action-left">
-         <div class="action-title">Call to action! It's time!</div>
-         <div class="action-text">Sign up for our product by clicking that button right over there!</div>
+      <div class="score-computer">
+        <div class="score-computer-number">0</div>
+        <div class="score-computer-label">Computer</div>
       </div>
-      <div class="action-right">
-         <button>Sign up</button>
-      </div>
-   </div>
+    </div>
+  </div>
+  <div class="play-area">
+    <div class="human-play">
+      <div class="card human-rock">Rock</div>
+      <div class="card human-paper">Paper</div>
+      <div class="card human-scissors">Scissors</div>
+    </div>
+    <div class="computer-play">
+      <div class="card computer-rock">Rock</div>
+      <div class="card computer-paper">Paper</div>
+      <div class="card computer-scissors">Scissors</div>
+    </div>
+  </div>
+</body>
 
-   <div class="footer">Copyright  ©  The Odin Project 2021</div>
-
-  </body>
 </html>
