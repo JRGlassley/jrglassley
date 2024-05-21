@@ -1,0 +1,49 @@
+body {
+   background-color: lightgray;
+}
+
+.title {
+   font-size: 36px;
+   font-weight: bolder;
+   font-style: italic;
+   text-align: center;
+   padding: 15px;
+   margin-top: 10px;
+}
+
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+   margin-bottom: 20px;
+}
+
+button {
+   font-size: 16px;
+   font-family: 'Roboto', sans-serif;
+   border-radius: 4px;
+   background-color: lightseagreen;
+}
+
+.grid-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#grid-root {
+   width: 600px;
+   height: 600px;
+   border: 10px palevioletred solid;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.row {
+   display: flex;
+}
+
+.square {
+   background-color: black;
+}

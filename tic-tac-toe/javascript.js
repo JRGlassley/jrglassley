@@ -56,26 +56,26 @@ async function playRound(humanDiv) {
       computerScoreDiv.style['background-color'] = 'LightSkyBlue';
    }
 
-   // clear status
+   // clear status after timeout
    setTimeout(() => {
       humanDiv.style['background-color'] = null;
       humanScoreDiv.style['background-color'] = null;
       computerDiv.style['background-color'] = null;
       computerScoreDiv.style.removeProperty('background-color');
-   }, 500);
 
-   // check for winner
-   if (computerScore == 5) {
-      alert("Computer wins the game!");
-      humanScore = 0;
-      computerScore = 0;
-      humanScoreDiv.textContent = humanScore.toString();
-      computerScoreDiv.textContent = computerScore.toString();
-   } else if (humanScore == 5) {
-      alert("Human wins the game!");
-      humanScore = 0;
-      computerScore = 0;
-      humanScoreDiv.textContent = humanScore.toString();
-      computerScoreDiv.textContent = computerScore.toString();
-   }
+      // check for winner
+      if (computerScore == 5) {
+         alert("Computer wins the game!");
+         humanScore = 0;
+         computerScore = 0;
+         humanScoreDiv.textContent = humanScore.toString();
+         computerScoreDiv.textContent = computerScore.toString();
+      } else if (humanScore == 5) {
+         alert("Human wins the game!");
+         humanScore = 0;
+         computerScore = 0;
+         humanScoreDiv.textContent = humanScore.toString();
+         computerScoreDiv.textContent = computerScore.toString();
+      }
+   }, 500);
 }
