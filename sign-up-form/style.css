@@ -1,0 +1,189 @@
+@font-face {
+   font-family: NorseBold;
+   src: url("assets/Norse-Bold.otf") format("opentype");
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-family: 'Helvetica', sans-serif;
+   font-weight: 500;
+}
+
+body {
+   background-color: whitesmoke;
+}
+
+p {
+   font-size: 18px;
+   margin-bottom: 0px;
+}
+
+.content {
+   display: flex;
+}
+
+.left {
+   width: 37vw;
+   max-height: 100vh;
+   overflow: hidden;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+}
+
+img {
+   width: 800px;
+}
+
+.icon-container {
+   width: 37vw;
+   background-color: rgba(0, 0, 0, 0.5);
+   position: absolute;
+   top: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   padding: 10px;
+}
+
+.odin-logo {
+   width: 75px;
+}
+
+.odin-text {
+   margin-top: 25px;
+   color: white;
+   font-size: 75px;
+   font-family: 'NorseBold', sans-serif;
+}
+
+.caption {
+   color: whitesmoke;
+   position: absolute;
+   bottom: 10px;
+   width: 37vw;
+   text-align: center;
+   opacity: 80%;
+   font-weight: 500;
+}
+
+.right {
+   background-color: whitesmoke;
+   width: 63vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.header {
+   padding: 30px 150px 50px 50px;
+   max-width: 520px;
+}
+
+.header-main {
+   margin-bottom: 20px;
+}
+
+.exclamation {
+   margin-bottom: 10px;
+}
+
+.form-block {
+   background-color: white;
+   padding: 20px 50px;
+   box-shadow: 2px 5px 5px lightgray;
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+}
+
+.create-account {
+   padding: 20px 50px;
+}
+
+.row {
+   padding: 5px 0;
+   width: 475px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.column {
+   position: relative;
+}
+
+label,
+input {
+   display: inline-block;
+}
+
+input {
+   margin-top: 20px;
+   margin-right: 50px;
+   border: 2px solid #E5E7EB;
+   outline: none;
+   border-radius: 3px;
+   height: 20px;
+   width: 100%;
+}
+
+input:focus {
+   outline: none;
+   border: 2px solid cornflowerblue;
+   box-shadow: 2px 5px 5px lightgray;
+}
+
+input:invalid {
+   outline: none;
+   border: 2px solid indianred;
+}
+
+label {
+   position: absolute;
+   font-size: 12px;
+   top: 5px;
+   color: gray;
+   font-family: 'Arial', sans-serif;
+}
+
+button {
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #006c00;
+   border-radius: 8px;
+   color: whitesmoke;
+   box-shadow: 2px 3px 5px lightgray;
+}
+
+button:hover, button:focus {
+   background-color: #008f00;
+}
+
+.log-in {
+   padding: 0px 50px;
+}
+
+.log-in-text {
+   font-weight: normal;
+   font-size: 16px;
+}
+
+a {
+   color: #006c00;
+}
+
+a:hover {
+   color: #008f00
+}
+
+.left a {
+   color: whitesmoke;
+}
+
+.left a:hover {
+   color: lightgray
+}
